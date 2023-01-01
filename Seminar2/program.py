@@ -41,3 +41,10 @@ else:
 
 # 17
 # 1 2 4 8 16
+
+n = int(input('Enter N number: '))
+fst = 1
+
+while fst <= n:
+    print(fst)
+    fst *= 2
