@@ -22,7 +22,6 @@ m = int(input('Enter number of the second row: '))
 def CreateSortCheckArrays (x, y):    
     rowOne = []
     rowTwo = []
-    result = []
 
     for item in range(x):
         rowOne.append(random.randint(0,10))
