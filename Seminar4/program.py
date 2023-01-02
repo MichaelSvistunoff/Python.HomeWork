@@ -14,6 +14,30 @@
 # Output: 11 6
 # 6 12
 
+import random
+
+n = int(input('Enter number of the first row: '))
+m = int(input('Enter number of the second row: '))
+
+def CreateSortCheckArrays (x, y):    
+    rowOne = []
+    rowTwo = []
+    result = []
+
+    for item in range(x):
+        rowOne.append(random.randint(0,10))
+    print(f'Your firs row is: {rowOne}')
+
+    for item in range(y):
+        rowTwo.append(random.randint(0,10))
+    print(f'Your second row is: {rowTwo}')
+    
+    result = [i for i in rowOne if i in rowTwo]
+    result = sorted(set(result))
+    return result
+
+print(CreateSortCheckArrays(n, m))
+
 # Задача 24:
 # В фермерском хозяйстве в Карелии выращивают чернику. Она растет на круглой грядке, причем кусты высажены только по окружности. Таким образом, у каждого куста есть ровно два соседних. Всего на грядке растет N кустов. Эти кусты обладают разной урожайностью, поэтому ко времени сбора на них выросло различное число ягод – на i-ом кусте выросло ai ягод.
 # В этом фермерском хозяйстве внедрена система автоматического сбора черники. Эта система состоит из управляющего модуля и нескольких собирающих модулей. Собирающий модуль за один заход, находясь непосредственно перед некоторым кустом, собирает ягоды с этого куста и с двух соседних с ним.
