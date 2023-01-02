@@ -1,3 +1,5 @@
+import random
+
 # Задача 22:
 # Даны два неупорядоченных набора целых чисел (может быть, с повторениями).
 # Выдать без повторений в порядке возрастания все те числа, которые встречаются в обоих наборах.
@@ -13,8 +15,6 @@
 
 # Output: 11 6
 # 6 12
-
-import random
 
 n = int(input('Enter number of the first row: '))
 m = int(input('Enter number of the second row: '))
