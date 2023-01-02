@@ -9,6 +9,20 @@ import random
 # Ввод: 5  
 # Ввод: 1
 
+n = int(input('Enter number of row: '))
+
+row = []
+for i in range(1, n):
+    row.append(random.randint(1, n/2))
+print(f'Your array: {row}')
+
+x = int(input('Enter number you need to check: '))
+count = 0
+for i in range(0, len(row)):
+    if row[i] == x:
+        count += 1
+print(f'Your number {x} meets {count} times in your row')
+
 # 1 2 1 2 2
 # Вывод: 2
 
