@@ -13,19 +13,19 @@ import random
 # 1 2 1 2 2
 # Вывод: 2
 
-# n = int(input('Enter number of row: '))
+n = int(input('Enter number of row: '))
 
-# row = []
-# for i in range(1, n):
-#     row.append(random.randint(1, n/2))
-# print(f'Your array: {row}')
+row = []
+for i in range(1, n):
+    row.append(random.randint(1, n/2))
+print(f'Your array: {row}')
 
-# x = int(input('Enter number you need to check: '))
-# count = 0
-# for i in range(0, len(row)):
-#     if row[i] == x:
-#         count += 1
-# print(f'Your number {x} meets {count} times in your row')
+x = int(input('Enter number you need to check: '))
+count = 0
+for i in range(0, len(row)):
+    if row[i] == x:
+        count += 1
+print(f'Your number {x} meets {count} times in your row')
 
 # Задача 18:
 # Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X.
@@ -39,20 +39,20 @@ import random
 # 1 2 1 8 9 6 5 4 3 4  
 # Вывод: 6
 
-# n = int(input('Enter number of row: '))
-# row = []
+n = int(input('Enter number of row: '))
+row = []
 
-# for i in range(1, n):
-#     row.append(random.randint(1, n))
-# print(f'Your array: {row}')
+for i in range(1, n):
+    row.append(random.randint(1, n))
+print(f'Your array: {row}')
 
-# number = 0
-# x = int(input('Enter number you need to check: '))
+number = 0
+x = int(input('Enter number you need to check: '))
 
-# for i in range(0, len(row)):
-#     if (x - row[i]) < x - number and x - row[i] > 0:
-#         number = i
-# print(row[number])
+for i in range(0, len(row)):
+    if (x - row[i]) < x - number and x - row[i] > 0:
+        number = i
+print(row[number])
 
 # Задача 20:
 # В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность.
